@@ -1,7 +1,0 @@
-Annotation @Entity: Marque une classe comme entité JPA, qui sera mappée à une table de base de données.
-Méthodes comme findByMajor: Spring Data JPA utilise une convention de nommage pour générer automatiquement des requêtes SQL.
-Configuration de connexion: Spring Boot utilise les propriétés dans application.properties pour configurer la connexion à PostgreSQL.
-Différence entre update et create:
-
-update: Met à jour le schéma si nécessaire, sans supprimer les données existantes
-create: Supprime et recrée le schéma à chaque démarrage
