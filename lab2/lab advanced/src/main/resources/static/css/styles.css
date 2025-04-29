@@ -1,0 +1,124 @@
+/* Custom styles for Student Portal */
+
+body {
+    padding-bottom: 60px;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    color: #495057;
+    font-weight: 600;
+}
+
+.footer {
+    margin-top: auto;
+}
+/* Mode sombre */
+:root {
+    --bg-color: #fff;
+    --text-color: #212529;
+    --card-bg: #fff;
+    --card-border: rgba(0, 0, 0, 0.125);
+    --navbar-bg: #343a40;
+    --navbar-color: #fff;
+    --input-bg: #fff;
+    --table-header-bg: #343a40;
+    --table-header-color: #fff;
+    --table-row-odd: rgba(0, 0, 0, 0.05);
+    --footer-bg: #f8f9fa;
+    --jumbotron-bg: #e9ecef;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --card-border: #333;
+    --navbar-bg: #1b1b1b;
+    --navbar-color: #e0e0e0;
+    --input-bg: #2c2c2c;
+    --table-header-bg: #2c2c2c;
+    --table-header-color: #e0e0e0;
+    --table-row-odd: rgba(255, 255, 255, 0.05);
+    --footer-bg: #1a1a1a;
+    --jumbotron-bg: #1e1e1e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+}
+
+.navbar {
+    background-color: var(--navbar-bg) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--navbar-color);
+}
+
+.form-control {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-color: var(--card-border);
+}
+
+.form-select {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-color: var(--card-border);
+}
+
+.table {
+    color: var(--text-color);
+}
+
+.table-dark th {
+    background-color: var(--table-header-bg) !important;
+    color: var(--table-header-color) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--table-row-odd);
+}
+
+.footer {
+    background-color: var(--footer-bg) !important;
+}
+
+.jumbotron {
+    background-color: var(--jumbotron-bg);
+}
+
+/* Ajoutez le bouton du mode sombre */
+.dark-mode-toggle {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color: var(--navbar-color);
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode-toggle i {
+    margin-right: 5px;
+}
